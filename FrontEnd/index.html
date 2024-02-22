@@ -8,23 +8,37 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./assets/style.css">
 	<script type="text/javascript" src="javascript/index.js" defer></script>
 	<script type="text/javascript" src="javascript/works.js" defer></script>
+	<script type="text/javascript" src="javascript/modale.js" defer></script>
 </head>
 <body>
 <header>
-	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
-	<nav>
-		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li>login</li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
+	<div class="login_editor" style="display: none;">
+		<i class="fa-solid fa-pen-to-square" style="color: white;"></i>
+		<p>Mode édition</p>
+	</div>
+	<div class="accueil">
+		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+		<nav>
+			<ul>
+				<li>projets</li>
+				<li>contact</li>
+				<li><a href="login.html" class="login" style="display:null;">login</li>
+				<li><a href="index.html" class="logout" style="display:none">logout</a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <main>
+	<aside id="modale">
+
+	</aside>
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
@@ -37,8 +51,15 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
-		<div class="filtres">	
+		<div class="projetsDetails">
+			<h2>Mes Projets</h2>
+			<div class="modifierProjets" style="display:none">
+			<i class="fa-solid fa-pen-to-square"></i>
+			<button class="button_modale">modifier</button>
+			</div>
+		</div>
+		<div class="filtres" style="display: null;">
+			<button class="btn_tous">Tous</button>	
 		</div>
 		<div class="gallery">
 		</div>
@@ -66,5 +87,4 @@
 	</nav>
 </footer>
 </body>
-
 </html>
