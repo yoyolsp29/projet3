@@ -95,7 +95,6 @@ function ajoutProjetModale() {
     </div>
     `;
 
-
     // EventListener pour le click en dehors de la popup
     const popup2 = document.querySelector(".popup2");
     popup2.addEventListener("click", (event) => {
@@ -110,9 +109,9 @@ function ajoutProjetModale() {
         popup2.style.display="none";
     });
 }
+ajoutProjetModale();
 
-
-function listenerModale( event) {
+function deleteProjet( event) {
     let button = event.target.parentElement;
     let figure = button.parentElement;
     const projetId = button.dataset.id;

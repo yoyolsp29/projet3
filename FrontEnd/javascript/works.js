@@ -52,7 +52,7 @@ function getProjets(baseUrl, idCategorie = 0, modale= false) {
                 i.classList.add('fa-solid');
                 i.classList.add('fa-trash-can');
                 i.addEventListener("click", (event) => {
-                        listenerModale( event);
+                        deleteProjet( event);
                 });
 
 
