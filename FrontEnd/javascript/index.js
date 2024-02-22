@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const logout=document.querySelector(".logout");
     const editor = document.querySelector(".login_editor");
     const token = localStorage.authToken;
-    const modale = document.getElementById("modale");
+    const modale = document.getElementById("modale1");
+    
     const modifierProjets = document.querySelector(".modifierProjets");
     const imgPopup = document.querySelector(".img_projets");
    
@@ -24,10 +25,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         affichageModale(modale);
     })
 
-
-    //const btnFermerModale = document.querySelector(".btnFermerModale")
-    //btnFermerModale.addEventListener("click", function(event) {
-    //    closeModale(modale);
-    //})
 })
 
